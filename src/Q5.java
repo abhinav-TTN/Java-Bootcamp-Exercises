@@ -5,7 +5,7 @@ The class should:
 2. class should also have setter methods to update a particular field
 3. Override its toString method to display a meaningful message using all these fields.
 */
-public class Employee {
+class Employee {
     private String firstName;
     private String lastName;
     private int age;

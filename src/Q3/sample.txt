@@ -1,0 +1,3 @@
+this is a sample file.
+It contains multiple lines and punctuations.
+Read this line, using FileReader and try-with-resources block.

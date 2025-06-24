@@ -1,17 +1,19 @@
-package Q3;//Write a program to count number of occurrences of a word in a file. The file name and word should be supplied through commandline.
+//Write a program to count number of occurrences of a word in a file. The file name and word should be supplied through commandline.
+package Q3;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class WordCount {
     public static void main(String[] args) {
-        String filename = args[0];
-        String word = args[1];
+//        String filename = args[0];
+//        String word = args[1];
 
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Enter absolute/relative path to the file name:");
-//        String filename = sc.nextLine();
-//        System.out.print("Enter word to find:");
-//        String word = sc.nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter absolute/relative path to the file name:");
+        String filename = sc.nextLine();
+        System.out.print("Enter word to find:");
+        String word = sc.nextLine();
 
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;

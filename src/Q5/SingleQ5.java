@@ -2,20 +2,21 @@
 package Q5;
 
 public class SingleQ5 {
-    private static int value;
-    private static SingleQ5 instance = null;
-    
+    private static SingleQ5 instance;
+
     private SingleQ5() {
-        value = 0;
+        System.out.println("Singleton created once.");
     }
-    private SingleQ5(int value) {
-        SingleQ5.value = value;
-    }
-    
-    public SingleQ5 getInstance() {
+
+    public static SingleQ5 getInstance() {
         if(instance == null) {
-            return new SingleQ5();
+            instance = new SingleQ5();
+            return instance;
         }
         return instance;
+    }
+
+    public void print(String message) {
+        System.out.println("Printing: "+ message);
     }
 }

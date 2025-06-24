@@ -1,3 +1,4 @@
+//Q4) Write a program to show application of Factory Design Pattern.
 package Q4;
 
 public class Main {

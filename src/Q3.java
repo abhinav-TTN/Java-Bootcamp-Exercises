@@ -4,7 +4,6 @@ public class Q3 {
     int stackTop = -1;
     int minTop = -1;
     int capacity = 10;
-    int min = Integer.MAX_VALUE;
 
     public Q3() {
         stack = new int[capacity];
@@ -18,28 +17,28 @@ public class Q3 {
     }
 
     void push(int i) {
-        if (!this.isFull()) {
+        if (!isFull()) {
             stack[++stackTop] = i;
         }
-        if (i < minStack[minTop] && !this.minIsFull()) {
+        if (i < minStack[minTop] && !minIsFull()) {
             minStack[++minTop] = i;
         }
     }
 
     int pop() throws Exception{
         int temp;
-        if(!this.isEmpty()) {
+        if(!isEmpty()) {
             temp = stack[stackTop--];
         }
         else throw new Exception();
-        if(!this.minIsEmpty() && minStack[minTop] == temp) {
-            min = minStack[--minTop];
+        if(!minIsEmpty() && minStack[minTop] == temp) {
+            minTop--;
         }
         return temp;
     }
 
     int getMin() {
-        return min;
+        return minStack[minTop];
     }
 
     boolean isEmpty() {

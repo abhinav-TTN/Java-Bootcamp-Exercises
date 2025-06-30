@@ -1,4 +1,4 @@
-//Use iterator stream method to generate a stream
+//Q1) Use iterator stream method to generate a stream
 
 import java.util.stream.Stream;
 

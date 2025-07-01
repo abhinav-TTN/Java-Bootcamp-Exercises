@@ -3,7 +3,6 @@ package Q6;
 
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 public class SetSequenceDemo {
 

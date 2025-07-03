@@ -2,11 +2,11 @@
 public class Q2 {
     private int val = 10;
 
-    private synchronized void increment() {
+    synchronized void increment() {
         val++;
     }
 
-    private void decrement() {
+    void decrement() {
         synchronized (this) {
             val--;
         }

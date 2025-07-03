@@ -1,8 +1,7 @@
 //Q3) WAP to showcase the usage of volatile in java.
 import java.util.Scanner;
 
-class Scratch {
-
+public class Q3 {
     // condition for the thread to execute its loop in a volatile variable
     volatile static boolean flag = true;
 
